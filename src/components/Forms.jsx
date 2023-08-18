@@ -18,10 +18,9 @@ export default function Forms() {
         if (form.checkValidity() === false) {
             e.preventDefault();
             e.stopPropagation();
-        } else {
-            saveProject();
         }
         setValidated(true);
+        saveProject();
     }
 
     const handleChange = (e) => {
